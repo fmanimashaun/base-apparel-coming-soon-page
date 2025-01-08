@@ -1,0 +1,8 @@
+@use '../abstract/variables' as *;
+
+// Generate font-weight utility classes with responsive variants
+@each $weight, $value in $font-weights {
+	.text-#{$weight} {
+		font-weight: #{$value};
+	}
+}

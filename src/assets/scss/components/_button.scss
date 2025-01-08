@@ -1,0 +1,16 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+@use '../abstract/placeholder';
+@use '../abstract/functions' as *;
+
+.btn {
+	@extend %btn;
+	width: 100%;
+	color: clr('light', 100);
+	background-color: clr('yellow', 400);
+	border: none;
+	border-radius: $border-radius-2;
+	box-shadow: $box-shadwo-2;
+	padding: 15px;
+	cursor: pointer;
+}
