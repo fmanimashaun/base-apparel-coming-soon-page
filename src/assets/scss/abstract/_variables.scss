@@ -1,23 +1,28 @@
 $colors: (
-  "cyan": (
-    400: hsl(179, 62%, 43%)
-  ),
-  "yellow": (
-    400: hsl(71, 73%, 54%)
-  ),
-  "gray": (
-    300: hsl(204, 43%, 93%),
-    400: hsl(218, 22%, 67%)
-  ),
+  "red": (
+    300: hsl(0, 36%, 70%),
+    400: hsl(0, 93%, 68%),
+    500: hsl(0, 6%, 24%)
+    ),
   "light": (
-    100: hsl(0, 0%, 100%)
-  )
+    100: hsl(0, 0%, 100%),
+    ),
+    "dark": (
+    800: hsl(0, 7%, 24%),
+    )
 );
+
+$gradients: (
+  "light": linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+  "pink": linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))
+);
+
 
 // typography
 $font-weights: (
+  "light": 300,
   "regular": 400,
-  "bold": 700
+  "semibold": 600
 );
 
 $text-aligns: (
@@ -26,17 +31,8 @@ $text-aligns: (
   "right": right,
 );
 
-$fs-family: "Karla", serif;
+$fs-family:  "Josefin Sans", serif;
 
-//border
-$border-radius-1: 0.5rem;
-$border-radius-2: 0.3125rem;
 
 //shadow
-$box-shadwo-1: 0 15px 30px 0 rgba(0, 81, 171, 0.15);
-$box-shadwo-2: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
-
-//spacing
-$card-block-1: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem) clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
-$card-block-2: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
-$card-inline: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+$box-shadow-1: 0 15px 20px 0 rgba(198, 110, 110, 0.25);

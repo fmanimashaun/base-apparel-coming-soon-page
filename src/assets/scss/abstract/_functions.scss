@@ -3,5 +3,10 @@
 
 // Define the clr function
 @function clr($color, $shade) {
-    @return map.get(map.get($colors, $color), $shade);
-  }
+  @return map.get(map.get($colors, $color), $shade);
+}
+
+// define the gradient function
+@function gradient($name) {
+  @return map.get($gradients, $name);
+}
